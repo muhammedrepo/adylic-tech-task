@@ -67,7 +67,7 @@ const Carousel: React.FC<CarouselProps> = () => {
   }
 
   return (
-    <div style={{ width: '300px', height: '600px' }}>
+    <div>
       {/* Carousel wrapper */}
       <div className="relative">
         <div className="duration-700 ease-in-out transition-all transform translate-x-0 z-20">
@@ -86,7 +86,7 @@ const Carousel: React.FC<CarouselProps> = () => {
             </div>
             <div className="w-[300px] h-[165px] mx-auto p-7 pb-8 bg-gray-200 flex flex-col items-center justify-center ">
               <div className="text-center max-w-[160px]">
-                <h5 className="mb-4 text-[25px] font-medium text-gray-900 font-custom">
+                <h5 className="mb-4 text-[25px] sm:text-xl font-medium text-gray-900 font-custom">
                   {name}
                 </h5>
                 <a href="#">
@@ -107,7 +107,7 @@ const Carousel: React.FC<CarouselProps> = () => {
           type="button"
           className="absolute left-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           onClick={prevPerson}>
-          <span className="inline-flex items-center justify-center w-[261px] h-3 mt-[3.5px] mb-[73.5px] rounded-full sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+          <span className="inline-flex items-center justify-center w-[20%] h-3 mt-[3.5px] mb-[73.5px] rounded-full sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
             <FaChevronLeft />
             <span className="sr-only">Previous</span>
           </span>
@@ -117,7 +117,7 @@ const Carousel: React.FC<CarouselProps> = () => {
           type="button"
           className="absolute right-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           onClick={nextPerson}>
-          <span className="inline-flex items-center justify-center w-[261px] h-3 mt-[3.5px] mb-[73.5px] rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <span className="inline-flex items-center justify-center w-[20%] h-3 mt-[3.5px] mb-[73.5px] rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
             <FaChevronRight />
             <span className="sr-only">Next</span>
           </span>
